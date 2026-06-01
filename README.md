@@ -13,8 +13,9 @@ A lightweight, static weather lookup app built with HTML, CSS, and vanilla JavaS
 ## How to use
 
 1. Obtain a free API key from OpenWeatherMap: https://openweathermap.org/api
-2. Open `script.js` and replace `YOUR_OPENWEATHER_API_KEY` with your key.
-3. Open `index.html` in a browser or deploy the repository to GitHub Pages.
+2. Open the app in a browser and enter your API key in the form.
+3. Search by city and country, then click `Get Weather`.
+4. Deploy the repository to GitHub Pages for public access.
 
 ## Deploy to GitHub Pages
 
