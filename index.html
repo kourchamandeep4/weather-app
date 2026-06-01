@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WEATHERLY</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">WEATHERLY</p>
+        <h1>Current weather, simplified.</h1>
+        <p class="intro">
+          Look up any city and country to see temperature, humidity, wind speed, and clear condition details in a modern, responsive interface.
+        </p>
+      </div>
+      <form id="weather-form" class="weather-form" aria-label="Weather lookup form">
+        <label for="city">City</label>
+        <input id="city" name="city" type="text" placeholder="e.g. Paris" autocomplete="off" required />
+
+        <label for="country">Country</label>
+        <input id="country" name="country" type="text" placeholder="e.g. FR or France" autocomplete="off" required />
+
+        <button type="submit">Get Weather</button>
+        <p id="message" class="message" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section id="weather-result" class="weather-result hidden" aria-live="polite">
+      <div class="weather-card">
+        <div class="weather-summary">
+          <div>
+            <p id="location" class="location"></p>
+            <p id="condition" class="condition"></p>
+          </div>
+          <div class="weather-icon">
+            <img id="weather-icon" src="" alt="Weather icon" />
+          </div>
+        </div>
+
+        <div class="weather-data">
+          <div class="weather-data-item">
+            <span>Temperature</span>
+            <strong id="temperature"></strong>
+          </div>
+          <div class="weather-data-item">
+            <span>Humidity</span>
+            <strong id="humidity"></strong>
+          </div>
+          <div class="weather-data-item">
+            <span>Wind</span>
+            <strong id="wind"></strong>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
